@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <title>Tarea 2 CIW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+   <!-- carga de la libreria ANIMATE.CSS CDN -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  </head>
+  <body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="" class="nav__logo"><img src="img/logo.png" class="logoSize"></a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="#seccion1" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Inicio</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#tab1-tab" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Carreras</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#tab2-tab" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Cursos</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#matricular" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Matricular</span>
+                    </a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#contacto" class="nav__link">
+                       <i class="ri-arrow-right-up-line"></i>
+                       <span>Contáctanos</span>
+                    </a>
+                 </li>
+              </ul>
+
+              </div>
+
+
+           <!-- Toggle button -->
+           <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+     </header>
+
+     <!--==================== SECTIONS ====================-->
+     <section class="margen1 banner1 mb-5" id="jump">
+      <div class="container text-center banner1-content">
+         <div class="col-lg-12 col-md-12">
+            <h1 class="display-1 frase1 wow animate__animated animate__fadeInDown animate__delay-100ms">Instituto Latinoamericano de Computación </h1>
+            <h2 class="display-9 frase2 wow animate__animated animate__fadeInDown animate__delay-100ms">Somos especialistas en computación</h2>
+         </div>
+      </div>
+     </section>
+
+     <section class="container wow animate__animated animate__fadeInUp animate__delay-100ms" id="seccion1">
+      <h3 class="frase3 mb-5 display-4"> Estamos conectados con vos</h3>
+      <div class="row ">
+         <div class="col-md-4 image-container">
+            <div class="card">
+                <img src="img/especialistas-min.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Especialistas</h5>
+                    <p class="card-text">Somos especialistas en computación en el país.</p>
+                    <a href="#" class="btn transicion1">Conocer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 image-container">
+            <div class="card">
+                <img src="img/trayectoria-min.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Trayectoria</h5>
+                    <p class="card-text">Trayectoria, compromiso y calidad en la educación. </p>
+                    <a href="#" class="btn  transicion1">Mas información</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 image-container">
+            <div class="card">
+                <img src="img/diferentes-min.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Diferentes</h5>
+                    <p class="card-text">Excelentes profesores y calidez en la educación.</p>
+                    <a href="#" class="btn  transicion1">Conocer mas</a>
+                </div>
+            </div>
+        </div>
+      </div>
+     </section>
+
+     <section class="wow animate__animated animate__fadeInUp animate__delay-100ms">
+      <div class="container my-5">
+         <h3 class="frase3 mb-3 display-4"> Especializate con nosotros </h3>
+         <!-- Pestañas -->
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+             <li class="nav-item" role="presentation">
+                 <a class="nav-link active custom-link" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Carreras técnicas</a>
+             </li>
+             <li class="nav-item" role="presentation">
+                 <a class="nav-link custom-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Cursos libres</a>
+             </li>
+             <li class="nav-item" role="presentation">
+                 <a class="nav-link custom-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Cursos especializados</a>
+             </li>
+         </ul>
+ 
+         <!-- Contenido de las pestañas -->
+         <div class="tab-content" id="myTabContent">
+             <!-- Primera pestaña: 4 Cards -->
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+               <div class="row">
+                  <!-- Genera 4 cards -->
+                  <div class="col-md-3 mb-4" *ngFor="let card of 4cards;">
+                        <div class="card">
+                           <img src="img/programacion-min.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Programación</h5>
+                              <p class="card-text">Aprende lenguajes como Python y SQL</p>
+                              <a href="#" class="btn transicion1">Conoce más</a>
+                           </div>
+                        </div> 
+                  </div>
+                  <div class="col-md-3 mb-4" *ngFor="let card of 4cards;">
+                     <div class="card">
+                           <img src="img/operador-min.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Operador</h5>
+                              <p class="card-text">Aprende Word, Power Point y Excel</p>
+                              <a href="#" class="btn transicion1">Conoce más</a>
+                           </div>
+                     </div> 
+                  </div>
+
+               <div class="col-md-3 mb-4" *ngFor="let card of 4cards;">
+               <div class="card">
+                     <img src="img/disenografico-min.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Diseño gráfico</h5>
+                        <p class="card-text">Aprende los programas de Adobe</p>
+                        <a href="#" class="btn transicion1">Conoce más</a>
+                     </div>
+               </div> 
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of 4cards;">
+               <div class="card">
+                     <img src="img/excel office-min.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Excel paso a paso</h5>
+                        <p class="card-text">Excel desde cero, con nuestros expertos.</p>
+                        <a href="#" class="btn transicion1">Conoce más</a>
+                     </div>
+               </div> 
+            </div>
+               </div>
+            </div>
+             <!-- Segunda pestaña: 8 Cards -->
+      <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+         <div class="row">
+            <!-- Genera 8 cards -->
+         <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+               <div class="card">
+                  <img src="img/excelBasico.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Excel básico</h5>
+                     <p class="card-text">Herramientas de eficiencia y rendimiento.</p>
+                     <a href="#" class="btn transicion1">Conoce más</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+               <div class="card">
+                  <img src="img/excelIntermedio-min.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Excel intermedio</h5>
+                     <p class="card-text">Informes atractivos y precisos.</p>
+                     <a href="#" class="btn transicion1">Conoce más</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+               <div class="card">
+                  <img src="img/excelAvanzado-min.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Excel avanzado</h5>
+                     <p class="card-text">Analisis eficaz de datos en excel.</p>
+                     <a href="#" class="btn transicion1">Conoce más</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+               <div class="card">
+                  <img src="img/word2-min.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Word básico</h5>
+                     <p class="card-text">Escritura y lectura para todos los niveles.</p>
+                     <a href="#" class="btn transicion1">Conoce más</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+               <div class="card">
+                  <img src="img/powerpoint-min.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">PowerPoint básico</h5>
+                     <p class="card-text">Presentaciones atractivas e interactivas.</p>
+                     <a href="#" class="btn transicion1">Conoce más</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+               <div class="card">
+                  <img src="img/windows.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Windows</h5>
+                     <p class="card-text">Organización y manejo de la computadora.</p>
+                     <a href="#" class="btn transicion1">Conoce más</a>
+                  </div>
+                  </div>
+               </div>
+
+                  <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+                     <div class="card">
+                        <img src="img/digitacion1Fixed-min.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Digitación</h5>
+                           <p class="card-text">Digitación ágil con los expertos.</p>
+                           <a href="#" class="btn transicion1">Conoce más</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 mb-4" *ngFor="let card of 8cards;">
+                     <div class="card">
+                        <img src="img/internetFixed-min.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Internet</h5>
+                           <p class="card-text">Aprende sobre Conexión e información.</p>
+                           <a href="#" class="btn transicion1">Conoce más</a>
+                        </div>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Tercera pestaña: 10 Cards -->
+             <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                 <div class="row">
+                     <!-- Genera 10 cards -->
+                     <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                         <div class="card">
+                             <img src="img/excel office-min.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                                 <h5 class="card-title">Macro excel</h5>
+                                 <p class="card-text">Se un experto en Macro excel.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                             </div>
+                         </div>
+                     </div>
+                        <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                           <div class="card">
+                              <img src="img/excel office-min.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Tablas dinámicas</h5>
+                                 <p class="card-text">Aprende como crear tablas dinanimcas.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                              </div>
+                           </div>
+                     </div>
+                        <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                           <div class="card">
+                              <img src="img/excel office-min.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Excel financiero</h5>
+                                 <p class="card-text">Se un experto en excel financiero.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                              </div>
+                           </div>
+                     </div>
+                        <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                           <div class="card">
+                              <img src="img/excel office-min.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Excel estadístico</h5>
+                                 <p class="card-text">Aprende excel estadístico con nosotros.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                              </div>
+                           </div>
+                     </div>
+                        <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                           <div class="card">
+                              <img src="img/project.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Project básico</h5>
+                                 <p class="card-text">Conoce las bases del project básico.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                              </div>
+                           </div>
+                     </div>
+                        <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                           <div class="card">
+                              <img src="img/project.jpeg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Project avanzado</h5>
+                                 <p class="card-text">Retate a aprender project avanzado.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                              </div>
+                           </div>
+                     </div>
+                        <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                           <div class="card">
+                              <img src="img/powerBiFixed.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Power BI</h5>
+                                 <p class="card-text">Aprende todo sobre power BI con nosotros.</p>
+                                 <a href="#" class="btn transicion1">Conoce más</a>
+                              </div>
+                           </div>
+                     </div>
+                     <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                        <div class="card">
+                           <img src="img/word-min.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Word avanzado</h5>
+                              <p class="card-text">Lectura y escritura avanzados.</p>
+                              <a href="#" class="btn transicion1">Conoce más</a>
+                           </div>
+                        </div>
+                  </div>
+                  <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                     <div class="card">
+                        <img src="img/access.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Access básico</h5>
+                           <p class="card-text">Aprende más sobre access básico.</p>
+                           <a href="#" class="btn transicion1">Conoce más</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 mb-4" *ngFor="let card of 10cards;">
+                     <div class="card">
+                        <img src="img/access.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Access avanzado</h5>
+                           <p class="card-text">Especializate en access avanzado.</p>
+                           <a href="#" class="btn transicion1">Conoce más</a>
+                        </div>
+                     </div>
+                  </div>
+                 </div>
+             </div>
+         </div>
+      </div>
+     </section>
+
+     <section>
+      <div class="container my-5" id="matricular">
+         <div class="row align-items-center">
+             <div class="col-md-6 wow animate__animated animate__fadeInDown animate__delay-100ms">
+                 <h1 class="display-4">Estudia virtualmente</h1>
+                 <p class="">Podés estudiar desde remotamente, donde desees.</p>
+                 <a href="#" class="btn transicion1 btn-lg">Más información</a>
+             </div>
+             <div class="col-md-6">
+                 <img src="img/wes-hicks-4-EeTnaC1S4-unsplash-min.jpg" class="img-fluid imagenBorde seccionCuatro" alt="Imagen Descriptiva">
+             </div>
+         </div>
+      </div>
+
+      <div class="container my-5">
+         <div class="row align-items-center">
+            <div class="col-md-6">
+               <img src="img/kenny-eliason-1-aA2Fadydc-unsplash-min.jpg" class="img-fluid imagenBorde seccionCuatro" alt="Imagen Descriptiva">
+            </div>
+            <div class="col-md-6 wow animate__animated animate__fadeInDown animate__delay-100ms">
+               <h1 class="display-4"> Instalaciones modernas</h1>
+               <p class="">Donde podrás capacitarte con las herramientas del momento.</p>
+               <a href="#" class="btn transicion1 btn-lg">Conocer más</a>
+            </div>
+         </div>
+      </div>
+     </section>
+
+     <section class="wow animate__animated animate__slideInUp animate__delay-300ms">
+      <div class="container my-5 banner2">
+         <div class="row align-items-center">
+            <div class="col-md-8">
+               <h1 class="display-4 ">Tu futuro comienza hoy</h1>
+               <p class="">Contáctanos hoy mismo y convertite en un profesional con los verdaderos especialistas.</p>
+            </div>
+            <div class="col-md-4">
+               <a href="#" class="btn transicion1 btn-lg">Matriculate hoy</a>
+            </div>
+         </div>
+      </div>
+     </section>
+     <section>
+
+     </section>
+
+   <a data-scroll id="flechabtn" class="goto-top" href="#jump" title="Ir al inicio" onclick="topFunction()">
+      <img src="img/angle-double-up.svg" alt="flecha para ir arriba" class="img-fluid">
+   </a>
+
+   <div class="container-botonws">
+      <a href="https://walink.co/6223cc" class="" target="blank">
+          <img class="botonws" src="img/ws.png" alt="">
+      </a>
+  </div>
+        <!--==================== FOOTER ====================-->
+    <footer class="container-fluid text-center" id="contacto">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="">
+                  <div class="mb-2">Contáctanos: <a href=""></a></div>
+                  <div class="">
+                     <i class="ri-map-pin-line"></i>
+                     <span class="text-center">San Jose, Costa Rica <a href=""></a></span>
+                  </div>
+                  <div class="">
+                     <i class="ri-mail-line"></i>
+                     <span class="footer__subtitle">info@ilacvirtual.com <a href=""></a></span>
+                  </div>
+                  <div class="">
+                     <i class="ri-phone-line"></i>
+                     <span class="footer__subtitle">+506 4052-7777 <a href=""></a></span>
+                  </div>
+                </div>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <br>
+                  <div class="nav__social">
+                     <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://github.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-github-line"></i>
+                     </a>
+
+                     <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-facebook-line"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+
+                     <a href="https://www.youtube.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-twitter-line"></i>
+                 </a>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+   <script src="js/index.js"></script>
+   <!-- Controlar la aparicion del boton scrolltop -->
+   <script src="js/elastico.js"></script>
+
+
+   <!-- Requisito de cargar para esconder el botón Scrolltop por medio de Jquery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+   <!-- cargar el archivo JS -->
+   <script src="js/wow.min.js"></script>
+   <!-- activa los efectos de animacion -->
+   <script>
+      new WOW().init();
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
