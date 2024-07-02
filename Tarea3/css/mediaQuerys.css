@@ -1,0 +1,147 @@
+/* Default styles (Extra Small devices) */
+.logoCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 300px;
+}
+
+.sticky-icon {
+    position: absolute;
+    bottom: -815px;
+    left: 500px;
+    height: 850px;
+    z-index: 900;
+}
+
+.sticky2-icon {
+    position: absolute;
+    bottom: 815px;
+    right: 300px;
+    height: 850px;
+    z-index: 1000;
+}
+
+.svg-icon {
+    width: 100%; 
+    height: auto;
+}
+
+.logoFinal {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin: auto;
+    height: 150px;
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+    .logoCenter {
+        margin: 30px;
+        height: 350px;
+    }
+
+    .sticky-icon {
+        left: 450px;
+        height: 800px;
+    }
+
+    .sticky2-icon {
+        right: 250px;
+        height: 800px;
+    }
+
+    .logoFinal {
+        height: 10px;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .logoCenter {
+        margin: 40px;
+        height: 400px;
+    }
+
+    .sticky-icon {
+        left: 400px;
+        height: 750px;
+    }
+
+    .sticky2-icon {
+        right: 200px;
+        height: 750px;
+    }
+
+    .logoFinal {
+        height: 160px;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .logoCenter {
+        margin: 50px;
+        height: 450px;
+    }
+
+    .sticky-icon {
+        left: 350px;
+        height: 700px;
+    }
+
+    .sticky2-icon {
+        right: 150px;
+        height: 700px;
+    }
+
+    .logoFinal {
+        height: 170px;
+    }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .logoCenter {
+        margin: 60px;
+        height: 500px;
+    }
+
+    .sticky-icon {
+        left: 300px;
+        height: 650px;
+    }
+
+    .sticky2-icon {
+        right: 100px;
+        height: 650px;
+    }
+
+    .logoFinal {
+        height: 200px;
+    }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+    .logoCenter {
+        margin: 70px;
+        height: 350px;
+    }
+
+    .sticky-icon {
+        left: 250px;
+        height: 600px;
+    }
+
+    .sticky2-icon {
+        right: 50px;
+        height: 600px;
+    }
+
+    .logoFinal {
+        height: 250px;
+    }
+}
