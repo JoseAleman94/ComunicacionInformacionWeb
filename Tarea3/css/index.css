@@ -55,14 +55,17 @@ p {
 
 .margen1 {
     margin-top: 140px;
-    font-size: 23px;
-    font-style: italic;
+    font-size: 20px;
 }
 
 .margen2 {
     margin-top: 80px;
     font-size: 23px;
-    font-style: italic;
+}
+
+.margen3 {
+    margin-top: 10px;
+    font-size: 23px;
 }
 
 .imagen1 {
@@ -151,4 +154,73 @@ height: auto; /* Mantiene la proporción de la imagen */
     color: #a4948c;
     border-color: 2px #961a38;
     
+}
+
+.hover-box {
+    background-color: linear-gradient(to right, #541b23, #961a38);
+    color: white;
+    transition: box-shadow 0.3s ease; /* Añadir una transición suave */
+    border-radius:20px 20px ;
+    padding: 20px;
+}
+
+/* Estilo del elemento en hover */
+.hover-box:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.hover-letras {
+    color: white;
+    transition: box-shadow 0.3s ease; /* Añadir una transición suave */
+    border-radius:20px 20px ;
+    padding: 20px;
+}
+
+/* Estilo del elemento en hover */
+.hover-letras:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.hover-objetos {
+    background-color: linear-gradient(to right, #541b23, #961a38);
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.1); /* Añadir un efecto de escala */
+}
+
+/* Estilo del elemento en hover */
+.hover-objetos:hover {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.hover-text {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Añadir transición para transform y color */
+  }
+  
+  /* Estilo del elemento en hover */
+  .hover-text:hover {
+    transform: scale(1.02); /* Aumentar el tamaño del texto */
+  }
+
+  .hover-flecha {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Añadir transición para transform y color */
+  }
+  
+  /* Estilo del elemento en hover */
+  .hover-flecha:hover {
+    transform: scale(1.1); /* Aumentar el tamaño del texto */
+  }
+
+  .goto-top {
+    position: sticky;
+    bottom: 30px;
+    left: 20px;
+    width: 75px;
+    height: 50px;
 }
