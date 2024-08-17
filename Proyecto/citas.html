@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <title>Clinica Kj Dra. Oconitrillo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css' rel='stylesheet' />
+
+
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/estructura.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/citas.css" rel="stylesheet">
+
+
+
+
+    <!-- carga de la libreria ANIMATE.CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- sticky-top  aparece el menu al desplazarce -->
+  
+    <!-- MENU DE NAVEGACION RESPONSIVE-->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="imagenes/logo.png" alt="Logo" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="servicios.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="corporales.html">Corporales</a></li>
+                <li><a class="dropdown-item" href="faciales.html">Faciales</a></li>
+                <li><a class="dropdown-item" href="tratamientos.html">Tratamientos</a></li>
+              </ul>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="testimoniales.html" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Testimonios</a>
+            <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <li><a class="dropdown-item" href="testimoniales.html">Testimoniales</a></li>
+              <li><a class="dropdown-item" href="testimoniales2.html">Galerias</a></li>
+            </ul>
+          </li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <a href="login.html" class="btn btn-outline-primary me-2 loginSize">Login</a>
+          <a href="citas.html" class="btn btn-primary agendarSize">Agendar</a>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="margen1">
+      <div class="containerPestanas container text-center">
+        <div class="tabs">
+          <h2 class="mt-5 mb-4">Seleccione el médico de su preferencia </h2>
+          <a class="tab btn btn-primary" onclick="showContent('tab1')">Dra. Karen Oconitrillo</a>
+          <a class="tab btn btn-primary" onclick="showContent('tab2')">Dra. Andrea Chacon</a>
+          <a class="tab btn btn-primary" onclick="showContent('tab3')">Dr. Jose Retana</a>
+        </div>
+        
+        <div class="container icono-con-lineas pt-3"><img src="imagenes/medical.png"></div>
+
+        <div class="content">
+          <div id="tab1" class="content-tab">
+            <div class="">
+              <div class="container">
+                <div class="row">
+                  <div class="card-body d-flex flex-column align-items-center">
+                  <img src="imagenes/mujer-min.jpg" class="img-fluid profile-img d-flex flex-column align-items-center" alt="Citas">
+                  <h1 class="text-center pt-2">Dra. Karen Oconitrillo</h1>
+                  <p class="text-center">Especialista en Medicina Estetica</p>
+                  <img src="imagenes/pharmacy.png" class="img-fluid doctoraLogo" alt="logoDoctora">
+                  
+                </div>
+                  <h1 class="text-center pt-3">Agenda tu cita</h1>
+                  <p class="text-center">Selecciona una fecha y hora para agendar tu cita</p>
+                  <div class="col-md-4 col-left">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Selecciona una fecha</h5>
+                        <input type="date" id="datePicker" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                      <table class="table table-bordered table-hover" id='calendar'>
+                        <thead>
+                          <tr>
+                            <th>Hora</th>
+                            <th>Disponible</th>
+                            <th>No Disponible</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>08:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>09:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>10:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>11:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>12:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>13:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>14:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>15:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>16:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>17:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>18:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>19:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="tab2" class="content-tab" style="display:none;">
+            <div class="">
+              <div class="container">
+                <div class="row">
+                  <div class="card-body d-flex flex-column align-items-center">
+                  <img src="imagenes/draAndrea.png" class="img-fluid profile-img d-flex flex-column align-items-center" alt="Citas">
+                  <h1 class="text-center pt-2">Dra. Andrea Chacon</h1>
+                  <p class="text-center">Enfermera e Instrumentista</p>
+                  <img src="imagenes/pharmacy.png" class="img-fluid doctoraLogo" alt="logoDoctora">
+                  
+                </div>
+                  <h1 class="text-center pt-3">Agenda tu cita</h1>
+                  <p class="text-center">Selecciona una fecha y hora para agendar tu cita</p>
+                  <div class="col-md-4 col-left">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Selecciona una fecha</h5>
+                        <input type="date" id="datePicker" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                      <table class="table table-bordered table-hover" id='calendar'>
+                        <thead>
+                          <tr>
+                            <th>Hora</th>
+                            <th>Disponible</th>
+                            <th>No Disponible</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>08:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>09:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>10:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>11:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>12:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>13:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>14:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>15:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>16:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>17:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>18:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>19:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="tab3" class="content-tab" style="display:none;">
+            <div class="">
+              <div class="container">
+                <div class="row">
+                  <div class="card-body d-flex flex-column align-items-center">
+                  <img src="imagenes/drJose.png" class="img-fluid profile-img d-flex flex-column align-items-center" alt="Citas">
+                  <h1 class="text-center pt-2">Dr. Jose Retana</h1>
+                  <p class="text-center">Medicina General</p>
+                  <img src="imagenes/pharmacy.png" class="img-fluid doctoraLogo" alt="logoDoctora">
+                  
+                </div>
+                  <h1 class="text-center pt-3">Agenda tu cita</h1>
+                  <p class="text-center">Selecciona una fecha y hora para agendar tu cita</p>
+                  <div class="col-md-4 col-left">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Selecciona una fecha</h5>
+                        <input type="date" id="datePicker" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                      <table class="table table-bordered table-hover" id='calendar'>
+                        <thead>
+                          <tr>
+                            <th>Hora</th>
+                            <th>Disponible</th>
+                            <th>No Disponible</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>08:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>09:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>10:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>11:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>12:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>13:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>14:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>15:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>16:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>17:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>18:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                          <tr>
+                            <td>19:00</td>
+                            <td><button class="btn btn-outline-primary">Agendar</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- scrolltop -->
+   <!-- el boton es una imagen diseñada png-jpg -->
+    <!-- al dar clic al boton carga una funcion JS llamada topFunction() que ya esta programada-->
+    <!-- se debe crear una clase llamada goto-top para ubicar el boton en la posicion derecha de la pagina web-->
+    <!-- datascroll es una propiedad de JS que permite que su desplazamiento sea muy sutil -->
+    <!-- el marcador #inicio permite ir arriba de la pagina donde se puso el id en el body -->
+    <!-- id="flechabtn" es la conexion con JS para esconder el boton scrolltop cuando llegue a la parte de arriba de la pagina web-->
+ 
+
+  
+  <footer class="bg-light text-center text-black py-3">
+    <div class="container">
+      <div class="mb-1">
+        <a href="https://www.instagram.com/clinicakj/" target="blank"><img src="imagenes/instagram.png" class="img-fluid img3"></a>
+        <a href="https://facebook.com/clinicakj/" target="blank"><img src="imagenes/facebook (3).png" class="img-fluid img3" ></a>
+        </a>
+        </a>
+      </div>
+      <p class="mb-0">© 2024 Jose Alemán. <br>Derechos reservados.</p>
+    </div>
+  </footer>
+  
+              <div class="container-botonws">
+                  <a href="https://walink.co/6223cc" class="" target="blank">
+                      <img class="botonws" src="imagenes/whatsapp (2).png" alt="">
+                  </a>
+              </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js'></script>
+
+    <!-- Requisito de cargar para esconder el botón Scrolltop por medio de Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Velocidad del salto de seccion (elastico.js) -->
+    <script src="js/smooth-scroll.min.js"></script>
+
+    <!-- Controlar la aparicion del boton scrolltop -->
+    <script src="js/elastico.js"></script>
+
+    <!-- cargar el archivo JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- activa los efectos de animacion -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="js/citas.js"></script>
+    <script src="js/servicios.js"></script>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
+  </body>
+</html>

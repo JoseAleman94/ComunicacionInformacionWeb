@@ -1,0 +1,318 @@
+html {
+    font-size: 16px;
+    font-family: 'lato', sans-serif;
+
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.goto-top {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 75px;
+    height: 50px;
+}
+
+.goto-top:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+.container-botonws {
+    /*color de fondo imagen*/
+    background-color: #e4e4e4;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/*efecto de animación imagen chat*/
+
+.botonws {
+    width: 40px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+.botonws:hover {
+    border-radius: 20px;
+}
+
+/*ICONO WHATSAPP*/
+
+.whatsapp {
+    position: fixed;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    border-radius: 50%;    
+    line-height: 20px;    
+    font-size: 60px;
+    text-decoration: none;
+    transition: all 1s ease-in;
+}
+
+.whatsapp:hover {
+    background-color: purple !important;
+    border-radius: 50px;
+}
+
+.margen1 {
+    margin-top: 100px;
+}
+
+.img3 {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* clases del video de fondo*/
+header {
+    margin-top: 100px;
+    max-height: auto;
+    max-width: 1400px;
+}
+header h1 {
+	text-shadow: 0 0 30px #fff;
+	letter-spacing: 5px;
+	font-size: 50px;	
+
+}	
+header p{	
+	font-size: 30px;
+	border-radius: 24px;
+	/*profundidad*/
+	/*usar la web para cambiar colores de la profundidad: http://hex2rgba.devoth.com/*/
+	/*box-shadow: inset 0 0 0 1000px rgba(38, 176, 207, 0.2);*/
+}	
+
+.container-fluid1{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+/*.logoHeader {
+    width: 1200px;
+    height: 400px;
+}*/
+
+.video {
+    max-width: 1880px;
+    max-height: 1400px;
+}
+
+.logoHeader2 {
+    margin-left: -210px;
+    max-height: 335px; /* Ajusta la altura máxima del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.pHeader {
+    font-size: 28px;
+}
+
+.logoHeader3 {
+    margin-left: -100px;
+    max-height: 180px; /* Ajusta la altura máxima del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.botonSizeHeader {
+    width: 200px;
+    height: 40px;
+    margin-left: -25px;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    background-color: #faf5e6;
+}
+
+  
+  .subscription-input {
+    padding: 8px 20px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    border: 2px solid #000000; /* Borde con color */
+    border-radius: 20px; /* Esquinas redondeadas */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 400px; /* Ancho máximo para evitar que el input sea muy largo */
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+  }
+  
+  .subscription-input:focus {
+    outline: none; /* Quita el borde de enfoque predeterminado */
+    border-color: rgba(235, 96, 119, 1); /* Cambia el color del borde al enfocarse */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra para el enfoque */
+  }
+
+
+  /* MEDIA QUERY */
+
+/* Extra small devices (landscape phones, 576px and down)*/
+
+@media (max-width: 576px) {
+
+    .logoHeader2 {
+        margin-left: -90px;
+        margin-top: 30px;
+        max-height: 125px; /* Ajusta la altura máxima del logo */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+    .pHeader {
+        font-size: 14px;
+    }
+    .botonSizeHeader {
+        width: 220px;
+        height: 45px 20px;
+        margin-left: -20px;
+    }
+    .fontSize {
+        font-size: 100px;
+      } 
+    .fontSize2 {
+    font-size: 18px;
+    } 
+    .loginSize {
+    height: 1px 1px;
+    font-size: 10px;
+    padding-top: 10px;
+    } 
+    .agendarSize {
+    height: 1px 1px;
+    font-size: 10px;
+    padding-top: 10px;
+    } 
+}
+
+@media (min-width: 576px) {
+    .logoHeader2 {
+        margin-left: -110px;
+        margin-top: 30px;
+        max-height: 145px; /* Ajusta la altura máxima del logo */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+    
+    .pHeader {
+        font-size: 16px;
+    }
+    .botonSizeHeader {
+        width: 220px;
+        height: 45px 20px;
+        margin-left: -20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    .logoHeader2 {
+        margin-left: -110px;
+        margin-top: 30px;
+        max-height: 165px; /* Ajusta la altura máxima del logo */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+    .pHeader {
+        font-size: 20px;
+    }
+    .botonSizeHeader {
+        width: 220px;
+        height: 45px 20px;
+        margin-left: -20px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .logoHeader2 {
+        margin-left: -210px;
+        max-height: 295px; /* Ajusta la altura máxima del logo */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+    
+    .pHeader {
+        font-size: 24px;
+    }
+    .botonSizeHeader {
+        width: 220px;
+        height: 45px;
+        margin-left: -30px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .logoHeader2 {
+        margin-left: -210px;
+        max-height: 295px; /* Ajusta la altura máxima del logo */
+        width: auto; /* Mantiene la proporción del logo */
+    }
+    
+    .pHeader {
+        font-size: 24px;
+    }
+    .botonSizeHeader {
+        width: 220px;
+        height: 45px;
+        margin-left: -30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .logoHeader2 {
+        margin-left: -100px;
+        max-height: 160px;
+    }
+    .pHeader {
+        font-size: 18px;
+    }
+    .botonSizeHeader {
+        width: 180px;
+        height: 35px;
+        margin-left: -20px;
+    }
+}
+
+/* XX Large devices (large laptops and desktops, 1400px and up)*/
+
+@media (min-width: 1400px) {
+
+}
+
+

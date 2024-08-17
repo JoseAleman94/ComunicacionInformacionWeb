@@ -1,0 +1,341 @@
+.bannerCorporal {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/bannerCorporal.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.bannerCorporal:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bannerFacial {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/bannerFacial.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.bannerFacial:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bannerTratamientos {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/bannerTratamiento.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.bannerTratamientos:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bannerTestimonial {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/bannerTestimonial.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.bannerTestimonial:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.banner2Testimonial {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/bannerTestimonial.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner2Testimonial:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.banner3Corporal {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/CorporalB.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner3Corporal:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.banner3Tratamientos {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/TratamientosB.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner3Tratamientos:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.banner3Facial {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/FacialB.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner3Facial:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.banner3Testimoniales {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/corporal7.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner3Testimoniales:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bannerPromocional {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 20px;
+  align-items: right;
+  border-radius: 20px;
+  /*control altura del banner*/
+  height: calc(60vh) ;
+  background-position: center;
+  background-image: url('/imagenes/promocional.png');
+  /*background-color: #928372;*/
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.bannerPromocional:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+.fontSize {
+  font-size: 100px;
+} 
+
+.fontSize2 {
+  font-size: 18px;
+} 
+  
+  .rating {
+    height: 80px;
+    width: 80px;
+  }
+
+  .arrow {
+    height: 20px;
+    width: 20px;
+    margin-left: 6px;
+  }
+
+  .arrow:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateX(4px);
+  }
+
+  .custom-link {
+    color: #333; /* Cambia este valor por el color que desees */
+    text-decoration: none; /* Elimina la subrayado */
+  }
+  
+  .custom-link:hover {
+    color: rgba(235, 96, 119, 1); /* Cambia el color al pasar el cursor */
+    text-decoration: none; /* Opcional: puedes añadir la subrayado al pasar el cursor */
+  }
+
+  .elegant-card {
+    background: #fff; /* Fondo blanco */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+
+  .elegant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .elegant-card h2 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .elegant-card p {
+    font-family: 'Arial', sans-serif;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .elegant-card button {
+    background: #eb6077;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+  }
+  
+  .elegant-card button:hover {
+    background: #ff8c94; /* Color de botón más claro al pasar el cursor */
+  }
+
+  /* Testimonios */
+
+  .elegant-card2 {
+    background: #fff; /* Fondo blanco */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+  }
+
+  .elegant-card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .elegant-card2 h2 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .elegant-card2 p {
+    font-family: 'Arial', sans-serif;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .elegant-card2 button {
+    background: #eb6077;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+  }
+  
+  .elegant-card2 button:hover {
+    background: #ff8c94; /* Color de botón más claro al pasar el cursor */
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo */
+    margin-right: 15px; /* Espacio entre la imagen y la información */
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-name {
+    margin: 0;
+    font-size: 1.25rem; /* Tamaño del nombre */
+    font-weight: bold;
+  }
+  
+  .profile-subtitle {
+    margin: 0;
+    color: #666; /* Color del subtítulo */
+    font-size: 1rem; /* Tamaño del subtítulo */
+  }

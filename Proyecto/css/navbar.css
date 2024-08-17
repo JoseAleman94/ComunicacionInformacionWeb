@@ -1,0 +1,162 @@
+/*********************  MENU NAV ******************************/
+
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 1px;
+    color: #000;
+    background-color: #fff;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+}
+
+
+.logo {
+    width: 300px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    transition: background-color 0.3s;
+    }
+
+    .navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+    height: 80px;
+    }
+
+    .navbar-nav .nav-link {
+    color: #000;
+    transition: color 0.3s;
+    position: relative; /* Necesario para el pseudo-elemento */
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease; /* Ajusta el tiempo y el tipo de transición */
+    }
+
+    .navbar-nav .nav-link:hover {
+    color: rgba(235, 96, 119, 1);
+    }
+
+    .content {
+    margin-top: 80px;
+    padding: 20px;
+    }
+
+.optmenu {
+    position: relative; /* Necesario para el pseudo-elemento */
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease; /* Ajusta el tiempo y el tipo de transición */
+}
+
+.optmenu:hover {
+    background-color: white; /* Mantén el fondo original */
+    color: black;
+}
+
+.optmenu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: rgba(235, 96, 119, 1); /* Color de la línea */
+    transform: scaleX(0); /* Oculta la línea por defecto */
+    transition: transform 0.3s ease; /* Ajusta el tiempo y el tipo de transición */
+}
+
+.optmenu:hover::after {
+    transform: scaleX(0.4); /* Muestra la línea en hover */
+}
+
+
+/*.optmenu {
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+    transition: all 1s solid;
+    color: black;
+}
+
+
+
+.optmenu:hover {
+    color: white;
+    background-color: rgba(183, 176, 158, 1);
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: rgba(235, 96, 119, 1);
+}*/
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+.optmenu:hover {
+    color: white;
+    background-color: rgba(183, 176, 158, 1);
+    transition: all 1s solid;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: transparent;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+    text-align: right; /* Alinea el icono a la derecha */
+    float: right; /* Flota el botón hacia la derecha */
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(183, 176, 158, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235, 96, 119, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}   
+
+.btn-outline-primary {
+    border-color: #000;
+    color: black;
+    border-radius: 30px;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: rgba(235, 96, 119, 1);
+    border-color: rgba(235, 96, 119, 1);
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: black;
+    border-color: #000;
+    border-radius: 30px;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgba(235, 96, 119, 1);
+    border-color: rgba(235, 96, 119, 1);
+  }
+
+  .loginSize {
+    height: 40px;
+  }
+
+  .agendarSize {
+    height: 40px;
+  }
